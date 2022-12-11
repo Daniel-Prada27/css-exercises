@@ -3,8 +3,16 @@
   padding: 0;
 }
 
+body {
+    height: 100vh;
+}
+
+ul {
+    list-style-type: none;
+}
 .container {
   text-align: center;
+  
 }
 
 .container div {
@@ -16,7 +24,18 @@
 }
 
 .header {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
   background-color: #393f4d;
+  grid-column: 1 / 6;
+  grid-row: 1 / 2;
+  align-items: center;
+  justify-content: start;
+}
+
+.menu > ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .menu ul,
